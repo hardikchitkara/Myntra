@@ -1,0 +1,89 @@
+.alltickets{
+    position: relative;
+    background-color: white;
+    width: 167vh;
+    height:70vh;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:stretch;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+.product-details{
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 50px;
+    /* position: relative;
+    top: -10; */
+    /* position: relative; */
+    
+}
+.product-brand{
+    font-size: small;
+    font-weight:bold;
+    position: relative;
+    top: -3rem;
+}
+.product-product{
+    position: relative;
+    font-size: small;
+    top: -10px;
+    position: relative;
+    top: -4rem;
+}
+.product-discountedPrice{
+    position: relative;
+    font-size: small;
+    top: -20px;
+    left: -20px;
+    position: relative;
+    top: -4rem;
+}
+.product-discountPercentage{
+    font-size: small;
+    position: relative;
+    top: -20px;
+    left: -30px;
+    color: orange;
+    font-weight: 400;
+    position: relative;
+    top: -4rem; 
+}
+.ticket{
+    min-height: 400px;
+    margin: 1rem;
+    background-color: hsla(0,0%,100%,.8);
+    height: 200px;
+    width: 200px;
+    min-width: 200px;
+}
+div .ticket:hover{
+    box-shadow: 0 5px 12px 0 grey;
+
+}
+
+#idofwish:hover{
+    border-color: deeppink;
+}
+#idofwish{
+    /* visibility: hidden; */
+    background-color: white;
+    position: relative;
+    margin-left: 4px;
+    font-weight: bold;
+    height: 3rem;
+    width: 12rem;
+    border: lightgrey solid 1px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    /* top: 1px; */
+    /* top: 108%; */
+    top: -3.5rem;
+}
