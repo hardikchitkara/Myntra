@@ -4,8 +4,16 @@
 
 .rightpane{
   position: absolute;
-  right:0px;
+  left: 0px;;
+  width: 100%;
   top: 281px;
-  background-color: aliceblue;
+  background-color: red;
+
+}
+.leftpane{
+  position: absolute;
+  left: 0px;
+  width: 20%;
+  min-width: 9rem;
 
 }

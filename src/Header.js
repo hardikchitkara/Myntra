@@ -49,17 +49,20 @@ class Header extends React.Component{
                         {
                             document.getElementById("modal").style.visibility="visible";
                         }
-                       for (let i=0;i<window.$count;i++)
+                        console.log(window.$count);
+                        let x=[];
+                        for (let i=0;i<window.$count;i++)
                         {
                             if(window.localStorage.getItem(`user${i}`)!=undefined)
                             {
                                 let obj=JSON.parse(window.localStorage.getItem(`user${i}`));
-                                let x=this.state.loading;
-                                x.push(obj);
-                                this.setState({loading:x})
-                            }
                                 
+                                x.push(obj);
+                                this.setState({loading:x});
+                            }
+                            
                         }
+                        
             
                         
                           
@@ -79,15 +82,11 @@ class Header extends React.Component{
                             >Close</button>
                             <div class="p-heading-icon--small">
                             {
-
-                                    
                                     this.state.loading.map((el)=>{
                                             if(el!=undefined)
                                             {
                                                 return(
-                                                
                                                     <div class="p-heading-icon__header">
-
                                                             <span>{el[2]}</span>
                                                             <span>{el[0]}</span>
                                                             <span>{el[1]}</span>
