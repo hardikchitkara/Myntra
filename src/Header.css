@@ -8,8 +8,6 @@
     box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
     display: flex;
     top: 0;
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
     z-index: 500;
 }
 .firstbox{
@@ -24,8 +22,15 @@
     left:150px;
     width: 50%;
     right:0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-
+@media screen and (max-width: 800px) {
+    .secondbox{
+        visibility: hidden;
+        
+    }
+  }
 .header_6{
     border-radius: 0 4px 4px 0;
     border-left: 0;
@@ -56,6 +61,7 @@
     justify-content: space-evenly;
     
 }
+
 .header_1>*{
     font-weight: 600;
 }
@@ -96,8 +102,6 @@
 }
 #modal{
     visibility: hidden;
-    /* min-width: 5rem; */
-    
 }
 .thirdbox{
     display: flex;

@@ -37,11 +37,11 @@ render(){
                         <div className="mid_3_2_6">Fabric</div>
                     </div>
                     <div className="mid_3_3">
-                            <div className="sort-sortBy" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}>
-                                <span>Sort By: </span>
-                                <span className="betdis">{this.state.sortingdata} </span>
-                                <i class="p-icon--chevron-down" ></i>
-                            </div>
+                        <div className="sort-sortBy" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}>
+                            <span>Sort By: </span>
+                            <span className="betdis">{this.state.sortingdata} </span>
+                            <i class="p-icon--chevron-down" ></i>
+                        </div>
                     </div>
                 </div>
             </div>

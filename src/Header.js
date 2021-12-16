@@ -42,8 +42,12 @@ class Header extends React.Component{
                      
                 </div>
                 <div className="thirdbox">
-                    <i class="p-icon--user"></i>
-                    <span class="myntraweb-sprite desktop-iconWishlist sprites-headerWishlist" ></span>
+                    <i class="p-icon--user"  onClick={()=>{
+                        alert("It is not working, it requires login ");
+                    }}></i>
+                    <span class="myntraweb-sprite desktop-iconWishlist sprites-headerWishlist" onClick={()=>{
+                        alert("It is not working, it requires login ");
+                    }}></span>
                     <div className="bag" onClick={()=>{
                         if(document.getElementById("modal").style.visibility!="visible")
                         {
