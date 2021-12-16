@@ -21,16 +21,24 @@
     position: relative;
     left:150px;
     width: 50%;
-    right:0rem;
+    
     margin-left: 1rem;
     margin-right: 1rem;
 }
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .secondbox{
+        position: absolute;
+        left: 2vh;
+    }
+} 
+
+@media screen and (max-width: 900px) {
+    .firstbox{
         visibility: hidden;
         
     }
   }
+
 .header_6{
     border-radius: 0 4px 4px 0;
     border-left: 0;
@@ -106,12 +114,23 @@
 .thirdbox{
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 5vh;   
 }
+@media screen and (max-width: 900px) {
+    .thirdbox{
+        
+        position: absolute;
+        
+    }
+  } 
 .bag{
-    width: 4rem;
+    
     cursor: pointer;
     z-index: 500;
+
 }
+
 #modal-description{
     width: 20rem;
 }
@@ -120,7 +139,8 @@
     color: #000;
     position: absolute;
     bottom: 4px;
-    right: 2.7%;
+    right: 0.1vh;
+
     width: 1.5rem;
     font-size: 12px;
     font-weight: 500;
