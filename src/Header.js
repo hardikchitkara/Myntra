@@ -21,8 +21,8 @@ class Header extends React.Component{
             <nav className="header">
                 <div className="firstbox">
                     <img className="desktop-logo"src="https://images.indianexpress.com/2021/01/myntra.png"></img>
-                    <div className="header_1"><span >Men</span></div>
-                    <div className="header_2"><span >WoMen</span></div>
+                    <div className="header_1"><span>Men</span></div>
+                    <div className="header_2"><span>WoMen</span></div>
                     <div className="header_3"><span>kids</span></div>
                     <div className="header_4"><span>HomenLiving</span></div>
                     <div className="header_5">
@@ -82,52 +82,41 @@ class Header extends React.Component{
                             >Close</button>
                             <div class="p-heading-icon--small">
                             {
-                                    this.state.loading.map((el)=>{
-                                            if(el!=undefined)
-                                            {
-                                                return(
-                                                    <div class="p-heading-icon__header">
-                                                            <span>{el[2]}</span>
-                                                            <span>{el[0]}</span>
-                                                            <span>{el[1]}</span>
-                                                            <span>{el[3]}</span>
-                                                            <span>{el[4]}</span>
-                                                            <span>{el[5]}</span>
-                                                            <span className="nameremove" onClick={(e)=>{
+                            this.state.loading.map((el)=>{
+                                    if(el!=undefined)
+                                    {
+                                        return(
+                                            <div class="p-heading-icon__header">
+                                                    <span>{el[2]}</span>
+                                                    <span>{el[0]}</span>
+                                                    <span>{el[1]+"Rs."}</span>
+                                                    <span>{el[3]+"%OFF"}</span>
+                                                    <span>{el[4]}</span>
+                                                    <span>{el[5]}</span>
+                                                    <span className="nameremove" onClick={()=>{
+                                                    for (let i=0;i< window.$count;i++)
+                                                    {
+                                                        if(window.localStorage.getItem(`user${i}`)!=undefined)
+                                                        {
+                                                            let obj=JSON.parse(window.localStorage.getItem(`user${i}`))
+                                                            if(JSON.stringify(el)==JSON.stringify(obj))
+                                                            {
+                                                                localStorage.removeItem(`user${i}`);
                                                                 
-                                                                
-                                                                for (let i=0;i< window.$count;i++)
-                                                                {
-                                                                    if(window.localStorage.getItem(`user${i}`)!=undefined)
-                                                                    {
-                                                                        let obj=JSON.parse(window.localStorage.getItem(`user${i}`))
-                                                                        if(JSON.stringify(el)==JSON.stringify(obj))
-                                                                        {
-                                                                            localStorage.removeItem(`user${i}`);
-                                                                            
-                                                                        }
-                                                                    }
-                                                                       
-                                                                }
-                                                                let x=this.state.loading;
-                                                                let idx=x.indexOf(el);
-                                                                
-                                                                x.splice(idx, 1);
-                                                                this.setState({loading:x})
-
-                                                                if(this.state.loading.length==0)
-                                                                {
-                                                                    window.$count=0;
-                                                                }
-
-                                                            }}>REMOVE</span>
-                                                        
-                                                    </div>
-                                                
-                                                )
-                                            }
-                                    })  
-                                    
+                                                            }
+                                                        }
+                                                    }
+                                                    let x=this.state.loading;
+                                                    let idx=x.indexOf(el);
+                                                    x.splice(idx, 1);
+                                                    this.setState({loading:x})
+                                                    if(this.state.loading.length==0) window.$count=0;
+                                                    }}>REMOVE</span>
+                                            </div>
+                                        )
+                                    }
+                            })  
+                            
                             }
                             </div>
                         </section>

@@ -28,6 +28,14 @@
     cursor: zoom-in;
 
 }
+@media only screen and (max-width: 768px) {
+    .imagemain {
+        width: 80%;
+        position: absolute; 
+        top: 12rem;
+        right: 3rem;
+    }
+  }
 .imagemain:hover{
     transform: scale(1.1);
 
@@ -37,12 +45,26 @@
     margin-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    width: 50%;
+    
      position: absolute; 
-    right: 0px; 
-    right: 0px;
+     width: 50%;
+     right: 0px;
     
 }
+
+@media only screen and (max-width: 800px) {
+    .detailsdisplay {
+        width: 100%;
+        position: absolute; 
+        top: 70rem;
+        right: 2rem;
+        left: 1rem;
+
+     
+    }
+  }
+
+
 .namebrand{
     color: #282c3f;
     font-size: 24px;
@@ -95,10 +117,30 @@ margin-top: 1rem;
     display: flex;
     padding-right: 20px;
     padding-top: 5px;
-    
 }
+@media only screen and (max-width: 768px) {
+    .size-buttons-size-button-default {
+        background-color: #fff;
+        border: 1px solid #bfc0c6;
+        padding: 0;
+        /* min-width: 50px; */
+        width: 10px;
+        
+        /* height: 50px; */
+        text-align: center;
+        cursor: pointer;
+        color: #282c3f;
+        position: relative;
+        /* margin-top: 1rem; */
+        display: flex;
+        padding-right: 20px;
+        padding-top: 5px;
+    }
+  }
+
 .buttons{
     display: flex;
+    justify-content: space-evenly;
 }
 .Buttonsaddandwish{
     margin-top: 1rem;
@@ -158,34 +200,25 @@ div.wishlist:hover{
 
 .full-image{
     position: relative;
-    /* z-index: 700; */
     top: 0px;
     cursor: zoom-in;
-    /* width: 980px;
-    h
-    height: 1306px; */
-    /* height: auto; */
     width: 800px;
 }
+
 .wholeimage{
    overflow-y: scroll;
    overflow-x: scroll;
-   
     width: 60%;
-   
     height: 82%;
     position: absolute;
-    /* image-rendering:auto; */
     border: #dee8ff solid 1px ;
     top: 0px;
 }
 
 #closebutton{
     position: absolute;
-    /* background-color: #ff3e6c; */
     right: 8.5rem;
     top: 0rem;
-    
 }
 .documentofimage{
     position: absolute;
@@ -198,8 +231,29 @@ div.wishlist:hover{
     align-items: center;
     visibility: hidden;
     top: -0.1rem;
-    
-    
 }
 
 
+@media only screen and (max-width: 768px) {
+    .documentofimage {
+        position: absolute;
+        z-index: 700;
+        width: 100%;
+        height: 90rem;   
+        background-color: rgba(53, 51, 51,0.5);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        visibility: hidden;
+        /* top: -0.1rem; */
+    }
+  }
+  
+  
+@media only screen and (max-width: 768px) {
+    #closebutton {
+        position: absolute;
+        right: 2rem;
+        top: 0rem;
+    }
+  }

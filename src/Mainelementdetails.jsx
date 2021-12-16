@@ -128,15 +128,15 @@ changesize(param){
                             <span class="addtobagname"></span>ADD TO BAG
                             </div>
                             <div class="wishlist" onClick={(el)=>{
-                                    
+                                alert("wishlist is just for UI as it requires login");
                             }}>
-                            <span class="wishlistname"></span>WISHLIST
+                            <span class="wishlistname" ></span>WISHLIST
                             </div>
                           
                               
                             
                         </div>
-                        <div className="deliveryoptions">
+                        <div className="deliveryoptions" >
                                 <span >
                                 Delivery Option:
 

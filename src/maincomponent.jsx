@@ -296,7 +296,9 @@ render(){
 
                   <div className="ticket" >
                     <img src={el.imgurl}></img>
-                    <div  id="idofwish">WishList</div>
+                    <div  id="idofwish" onClick={()=>{
+                      alert("Wishlist is just for UI as it requires login");
+                    }}>WishList</div>
                     <div className="product-details">
                         <h3 class="product-brand">{el.brand}</h3>
                         <h4 class="product-product">{el.filter}</h4>
