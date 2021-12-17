@@ -238,11 +238,8 @@ render(){
       }
       return false;
     });
-    
-    
   }
   shirtstodisplay = shirtstodisplay.filter((el) => {
-    
     if(
       (this.props.sendsexdata.length==0 || this.props.sendsexdata.includes(el.sex))
       &&(this.props.sendbranddata.length==0 || this.props.sendbranddata.includes(el.brand))
@@ -273,66 +270,47 @@ render(){
       return b.discount-a.discount;
     })
   }
-  
-  
-    return(    
-      
-          <div className="alltickets">
-            {
-            shirtstodisplay.map((el)=>{
-                return (
-                  
-                  <Link
-                  to={{pathname:"/details",state:[{ 
-                    filter: el.filter,
-                    brand: el.brand,
-                    price: el.price,
-                    discount:el.discount,
-                    color: el.color,
-                    imgurl:el.imgurl,
-                    sex: el.sex}]}}
-
-                  style={{ textDecoration: 'none' ,color:'black'}} >
-
-                  <div className="ticket" >
-                    <img src={el.imgurl}></img>
-                    <div  id="idofwish" onClick={()=>{
-                      alert("Wishlist is just for UI as it requires login");
-                    }}>WishList</div>
-                    <div className="product-details">
-                        <h3 class="product-brand">{el.brand}</h3>
-                        <h4 class="product-product">{el.filter}</h4>
-                        <span class="product-discountedPrice">Rs. {el.price}</span>
-                        <span class="product-discountPercentage">({el.discount}% OFF)</span>
-                        
-                    </div>
-                  </div>
-                 
-                  </Link>
-                )
-              }
-
-              
-              
-            )
-            }
-            
-           
-
-        </div>
-        
+  return(    
     
-)
-}
+        <div className="alltickets">
+          {
+          shirtstodisplay.map((el)=>{
+              return (
+                
+                <Link
+                to={{pathname:"/details",state:[{ 
+                  filter: el.filter,
+                  brand: el.brand,
+                  price: el.price,
+                  discount:el.discount,
+                  color: el.color,
+                  imgurl:el.imgurl,
+                  sex: el.sex}]}}
 
+                style={{ textDecoration: 'none' ,color:'black'}} >
 
+                <div className="ticket" >
+                  <img src={el.imgurl}></img>
+                  <div  id="idofwish" onClick={()=>{
+                    alert("Wishlist is just for UI as it requires login");
+                  }}>WishList</div>
+                  <div className="product-details">
+                      <h3 class="product-brand">{el.brand}</h3>
+                      <h4 class="product-product">{el.filter}</h4>
+                      <span class="product-discountedPrice">Rs. {el.price}</span>
+                      <span class="product-discountPercentage">({el.discount}% OFF)</span>
+                      
+                  </div>
+                </div>
+                
+                </Link>
+              )
+            }
+
+          )
+          }
+      </div>
+    )
+    }
 }
 export default maincomponent
-// { 
-//   filter: el.filter,
-//   brand: el.brand,
-//   price: el.price,
-//   discount:el.discount,
-//   color: el.color,
-//   imgurl:el.imgurl,
-//   sex: el.sex}

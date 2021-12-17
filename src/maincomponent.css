@@ -8,18 +8,12 @@
     align-items:stretch;
     flex-wrap: wrap;
 }
-@media screen and (max-width: 800px) {
-    .alltickets {
-      width: 100%; 
-      top: 3rem;
-    }
-}
-  
+
 @media screen and (max-width: 768px) {
-.alltickets {
-    width: 100%;
-    top: 3rem;
-}
+    .alltickets {
+        width: 100%;
+        top: 3rem;
+    }
 }
   
 

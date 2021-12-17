@@ -25,7 +25,9 @@ render(){
                     Shirts For Men & Women -
                 </div>
                 <div className="mid_3">
+
                     <div className="mid_3_1">Filters</div>
+
                     <div className="mid_3_2">
                         <div className="mid_3_2_1">Add-ons</div>
                         <div className="mid_3_2_2">Bundles</div>
@@ -34,16 +36,16 @@ render(){
                         <div className="mid_3_2_5">Country of origin</div>
                         <div className="mid_3_2_6">Fabric</div>
                     </div>
-                    <div className="mid_3_3">
-                        <div className="sort-sortBy" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}>
+
+                    <div className="mid_3_3" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}>
+                        <div className="sort-sortBy" >
                             <span>Sort By: </span>
-                            <span className="betdis">{this.state.sortingdata} </span>
-                            <i class="p-icon--chevron-down" ></i>
+                            <span className="betdis">{this.state.sortingdata}</span>
+                            <i class="p-icon--chevron-down"></i>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className="menu" id="sec" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}>
+
+                    <div className="menu" id="sec" onMouseOver={this.MouseOver} onMouseOut={this.MouseOut}>
                     <table aria-label="Example of a sortable table">
                         <tbody>
                         <tr>
@@ -94,11 +96,14 @@ render(){
                                     sortingdata:"Cusromer Rating"
                                 })
                                 this.props.receivesortingdata("choi6")
-                            }}>Cusromer Rating</th>                            
+                            }}>Customer Rating</th>                            
                             </tr>
                         </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+           
 
         </div>
     )

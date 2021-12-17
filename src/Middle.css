@@ -35,15 +35,17 @@
     
     font-weight: bold;
     width: 15%;
-    margin-left:20px
+    margin-left:20px;
+    position: absolute;
+    left: 5px;
 }
 @media screen and (max-width:900px) {
     .mid_3_1{
         position: absolute;
-        left:0px;
+        
         font-weight: bold;
         width: 15%;
-        margin-left:1rem;
+        left:5px;
     }
 }
 .mid_3_2{
@@ -51,15 +53,20 @@
     justify-content: space-evenly;
     align-items: center;
     width: 60%;
+    position: absolute;
 }
 .mid_3{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     border-bottom: lightgrey solid 0.1px;
+    position: relative;
+    
+    
 }
+
 .sort-sortBy .betdis{
     font-weight: bold;
 }
@@ -77,72 +84,80 @@
     right:2px;
 }
 .mid_3_3{
-    display: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     display: inline-block;
-    margin-right: 5vh;
     margin-bottom: 0;
-    margin-top: -7px;
-    position: relative;
-    right: 0px;
-    top: 5px;   
+    margin-top: -2rem;
+    position: absolute;
+    top: 5px;    
+    right: 2vh;
+    width: 255px;
+    min-width: 255px;
+    padding-top: 10px;
+    border: 1px solid #d4d5d9;
+    height: 3rem;
     
 }
-
 @media screen and (max-width: 768px) {
     .mid_3_3{ 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         display: inline-block;
-        margin-right: 16vh;
         margin-bottom: 0;
-        margin-top: -7px;
-        position: relative;
-        top: 5px; 
-        right: 0px;
+        margin-top: -2rem;
+        position: absolute;
+        top: 5px;    
+        right: 2vh;
+        width: 255px;
+        min-width: 255px;
+        padding-top: 10px;
+        border: 1px solid #d4d5d9;
+        height: 3rem;
     }
 }
 .menu{
     position: absolute;
     display: inline-block;
     height: 241px;
-    margin-right: 6vh;
+    margin-right: 2vh;
     right: 0px;
     width:  255px;
-    top: 265px;
+    top: 20px;
     border: lightgrey solid 0.1px;
     visibility: hidden;
-    z-index: 500;
+    z-index: 450;
 }
 @media screen and (max-width: 768px) {
     .menu{ 
         position: absolute;
         display: inline-block;
         height: 241px;
-        margin-right: 1vh  ;
+        margin-right: 2vh;
         right: 0px;
         width:  255px;
-        top: 282px;
+        top: 20px;
         border: lightgrey solid 0.1px;
         visibility: hidden;
-        z-index: 500;
+        z-index: 450;
     }
 }
   
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
     .mid_3_2{
         visibility: hidden;
     }
 }
 .sort-sortBy {
-    padding: 9px 14px;
     font-size: 14px;
-    width: 255px;
     color: #282c3f;
     cursor: pointer;
     position: relative;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     border-radius: 2px;
     background-color: #fff;
-    border: 1px solid #d4d5d9;
+    
 }
 
 .Example.of.a.sortable.table{

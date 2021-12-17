@@ -20,22 +20,13 @@
 }
 .imagemain{
     border-radius: 8px;
-    /* width: 40rem;
-    height: 40rem; */
     margin: 0 auto;
     transition: 0.5s all ease-in-out;
     overflow: hidden;
     cursor: zoom-in;
 
 }
-@media only screen and (max-width: 768px) {
-    .imagemain {
-        width: 80%;
-        position: absolute; 
-        top: 12rem;
-        right: 3rem;
-    }
-  }
+
 .imagemain:hover{
     transform: scale(1.1);
 
@@ -56,7 +47,7 @@
     .detailsdisplay {
         width: 100%;
         position: absolute; 
-        top: 35rem;
+        top: 40rem;
     }
 }
 .namebrand{
@@ -116,21 +107,16 @@ margin-top: 1rem;
         background-color: #fff;
         border: 1px solid #bfc0c6;
         padding: 0;
-        /* min-width: 50px; */
         width: 10px;
-        
-        /* height: 50px; */
         text-align: center;
         cursor: pointer;
         color: #282c3f;
         position: relative;
-        /* margin-top: 1rem; */
         display: flex;
         padding-right: 20px;
         padding-top: 5px;
     }
   }
-
 .buttons{
     display: flex;
     justify-content: space-evenly;
@@ -159,7 +145,6 @@ margin-top: 1rem;
     margin-right: 1rem;
 }
 .wishlist{
-    /* background-color: aqua; */
     font-weight: bold;
     height: 3rem;
     width: 12rem;
