@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Myntra/static/css/main.9c67615f.chunk.css",
-    "main.js": "/Myntra/static/js/main.b2b79ad3.chunk.js",
-    "main.js.map": "/Myntra/static/js/main.b2b79ad3.chunk.js.map",
+    "main.css": "/Myntra/static/css/main.b7bda245.chunk.css",
+    "main.js": "/Myntra/static/js/main.bbbb5dad.chunk.js",
+    "main.js.map": "/Myntra/static/js/main.bbbb5dad.chunk.js.map",
     "runtime-main.js": "/Myntra/static/js/runtime-main.2be01622.js",
     "runtime-main.js.map": "/Myntra/static/js/runtime-main.2be01622.js.map",
     "static/js/2.9e77ba3b.chunk.js": "/Myntra/static/js/2.9e77ba3b.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.b93d50e2.chunk.js": "/Myntra/static/js/3.b93d50e2.chunk.js",
     "static/js/3.b93d50e2.chunk.js.map": "/Myntra/static/js/3.b93d50e2.chunk.js.map",
     "index.html": "/Myntra/index.html",
-    "static/css/main.9c67615f.chunk.css.map": "/Myntra/static/css/main.9c67615f.chunk.css.map",
+    "static/css/main.b7bda245.chunk.css.map": "/Myntra/static/css/main.b7bda245.chunk.css.map",
     "static/js/2.9e77ba3b.chunk.js.LICENSE.txt": "/Myntra/static/js/2.9e77ba3b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2be01622.js",
     "static/js/2.9e77ba3b.chunk.js",
-    "static/css/main.9c67615f.chunk.css",
-    "static/js/main.b2b79ad3.chunk.js"
+    "static/css/main.b7bda245.chunk.css",
+    "static/js/main.bbbb5dad.chunk.js"
   ]
 }
