@@ -10,13 +10,8 @@ class Header extends React.Component{
         let x=this.state.loading;
         x.push(param);
         this.setState({loading:x})
-        
     }
     render(){
-        
-        console.log(this.state.loading);
-        
-
         return (
             <nav className="header">
                 <div className="firstbox">
@@ -42,7 +37,7 @@ class Header extends React.Component{
                      
                 </div>
                 <div className="thirdbox">
-                    <i class="p-icon--user"  onClick={()=>{
+                    <i class="p-icon--user" style={{cursor:"pointer"}}onClick={()=>{
                         alert("It is not working, it requires login ");
                     }}></i>
                     <span class="myntraweb-sprite desktop-iconWishlist sprites-headerWishlist" onClick={()=>{

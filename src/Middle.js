@@ -2,19 +2,17 @@ import React from "react";
 import "./Middle.css"
 
 class Middle extends React.Component{
-    state={
-        sortingdata:"Recommended"
-    }
-     MouseOver(event) {
-        const element = document.getElementById("sec");
-        element.style.visibility= "visible";
-        
-      }
-      
-      MouseOut(event){
-        const element = document.getElementById("sec");
-        element.style.visibility= "hidden";
-      }
+state={
+    sortingdata:"Recommended"
+}
+MouseOver() {
+    const element = document.getElementById("sec");
+    element.style.visibility= "visible"; 
+}
+MouseOut(){
+    const element = document.getElementById("sec");
+    element.style.visibility= "hidden";
+}
 render(){
     return (
         <div>
@@ -50,6 +48,7 @@ render(){
                         <tbody>
                         <tr>
                             <th className="tablevalues" onClick={()=>{
+                                
                                 this.setState({
                                     sortingdata:"What's new"
                                 })
@@ -58,6 +57,7 @@ render(){
                             </tr>
                             <tr>
                             <th className="tablevalues" onClick={()=>{
+                                
                                 this.setState({
                                     sortingdata:"Popularity"
                                 })

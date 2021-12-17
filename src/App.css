@@ -4,12 +4,18 @@
 
 .rightpane{
   position: absolute;
-  left: 0px;;
-  width: 100%;
+  right: 0px;
+  width: 80%;
   top: 281px;
-  background-color: red;
-
 }
+@media screen and (max-width: 768px) {
+  .rightpane{
+    position: absolute;
+    right: 0px;
+    top: 281px;
+    width: 14rem;
+  }
+} 
 .leftpane{
   position: absolute;
   left: 0px;

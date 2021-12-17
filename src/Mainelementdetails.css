@@ -56,15 +56,9 @@
     .detailsdisplay {
         width: 100%;
         position: absolute; 
-        top: 70rem;
-        right: 2rem;
-        left: 1rem;
-
-     
+        top: 35rem;
     }
-  }
-
-
+}
 .namebrand{
     color: #282c3f;
     font-size: 24px;
@@ -75,7 +69,6 @@
 }
 .namefilter{
     color: #535665;
-    
     font-size: 20px;
     font-weight: 400;
     border-bottom: lightgrey solid 1px;

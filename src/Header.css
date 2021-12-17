@@ -25,17 +25,16 @@
     margin-left: 1rem;
     margin-right: 1rem;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 968px) {
     .secondbox{
         position: absolute;
         left: 2vh;
     }
 } 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 968px) {
     .firstbox{
         visibility: hidden;
-        
     }
   }
 
@@ -108,9 +107,7 @@
     height: 22px;
     background-position: -315px -187px;
 }
-#modal{
-    visibility: hidden;
-}
+
 .thirdbox{
     display: flex;
     align-items: center;
@@ -132,7 +129,7 @@
 }
 
 #modal-description{
-    width: 20rem;
+    width: 18rem;
 }
 
 .desktop-userTitle {
@@ -151,8 +148,13 @@
 }
 .p-heading-icon__header{
     border-top: grey solid 1px;
+    overflow-x: scroll;
 }
 .nameremove{
     color:red;
     cursor: pointer;
+    
+}
+#modal{
+    visibility: hidden;
 }

@@ -56,48 +56,42 @@ class App extends React.Component{
       sortingchoice:param
     })
   }
-  receivecartdata=(param)=>{
-    this.setState({
-      cart:param
-    })
-  }
   render(){
     console.log("cart data --->", this.state.cart);
     
     return (
       <React.Fragment>
         <div>
-        <div className="App">
-        <Header
-          receivestringdata={this.receivestringdata}
-          
-        />
-        <Middle
-          receivesortingdata={this.receivesortingdata}
-        />
-        </div>
-        <div className="App2">
-          <div className="leftpane">
-            <Leftpane
-              receivesexdata={this.receivesexdata}
-              receivepricedata={this.receivepricedata}
-              receivebranddata={this.receivebranddata}
-              receivediscountrangedata={this.receivediscountrangedata}
-              receivecolordata={this.receivecolordata}
-            />
+          <div className="App">
+          <Header
+            receivestringdata={this.receivestringdata}
+          />
+          <Middle
+            receivesortingdata={this.receivesortingdata}
+          />
           </div>
-          <div className="rightpane">
-            <Maincomponent
-              sendsexdata={this.state.sexdata}
-              sendpricedata={this.state.pricedata}
-              sendbranddata={this.state.branddata}
-              senddiscountrangedata={this.state.discountrangedata}
-              sendcolordata={this.state.colordata}
-              
-              sendstringdata={this.state.searchedstring}
-              sendsortingchoice={this.state.sortingchoice}
-            />
-          </div>
+          <div className="App2">
+            <div className="leftpane">
+              <Leftpane
+                receivesexdata={this.receivesexdata}
+                receivepricedata={this.receivepricedata}
+                receivebranddata={this.receivebranddata}
+                receivediscountrangedata={this.receivediscountrangedata}
+                receivecolordata={this.receivecolordata}
+              />
+            </div>
+            <div className="rightpane">
+              <Maincomponent
+                sendsexdata={this.state.sexdata}
+                sendpricedata={this.state.pricedata}
+                sendbranddata={this.state.branddata}
+                senddiscountrangedata={this.state.discountrangedata}
+                sendcolordata={this.state.colordata}
+                
+                sendstringdata={this.state.searchedstring}
+                sendsortingchoice={this.state.sortingchoice}
+              />
+            </div>
         </div>
       </div>
       </React.Fragment>

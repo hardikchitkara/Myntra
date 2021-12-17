@@ -132,9 +132,6 @@ changesize(param){
                             }}>
                             <span class="wishlistname" ></span>WISHLIST
                             </div>
-                          
-                              
-                            
                         </div>
                         <div className="deliveryoptions" >
                                 <span >

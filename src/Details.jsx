@@ -38,38 +38,36 @@ function Details(){
         setdata({...obj});
       }
       
-      // console.log(data);
-        return(
-            
-                <div>
-                    <div className="App">
-                        <Header
-                              sendalldata={data}
-                        />
-                    </div>
+      
+      return(
+        <div>
+            <div className="App">
+                <Header
+                      sendalldata={data}
+                />
+            </div>
+            <div>
+                <Mainelementdetails
+                    sendsexticket={location.state[0].sex}
+                    sendbrandticket={location.state[0].brand}
+                    sendpriceticket={location.state[0].price}
+                    senddiscountticket={location.state[0].discount}
+                    sendcolorticket={location.state[0].color}
+                    sendimgurlticket={location.state[0].imgurl}
+                    sendfilterticket={location.state[0].filter}
+                    receivesexdata={receivesexdata}
+                    receivepricedata={receivepricedata}
+                    receivebranddata={receivebranddata}
+                    receivediscountrangedata={receivediscountrangedata}
+                    receivecolordata={receivecolordata}
+                    receivesizedata={receivesizedata}
                     
-                    <div>
-                        <Mainelementdetails
-                            sendsexticket={location.state[0].sex}
-                            sendbrandticket={location.state[0].brand}
-                            sendpriceticket={location.state[0].price}
-                            senddiscountticket={location.state[0].discount}
-                            sendcolorticket={location.state[0].color}
-                            sendimgurlticket={location.state[0].imgurl}
-                            sendfilterticket={location.state[0].filter}
-                            receivesexdata={receivesexdata}
-                            receivepricedata={receivepricedata}
-                            receivebranddata={receivebranddata}
-                            receivediscountrangedata={receivediscountrangedata}
-                            receivecolordata={receivecolordata}
-                            receivesizedata={receivesizedata}
-                            
 
-                        />
-                    </div>
-                </div>
-            
-        )
+                />
+            </div>
+        </div>
+          
+      )
     
     
 }
