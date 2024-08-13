@@ -2,24 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import Details from './Details.jsx';
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom"
-window.$count=0;
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+
+window.$count = 0;
 ReactDOM.render(
-  
-    <Router>
-      <Switch>
-        <Route path="/details"> 
-          <Details />      
-        </Route>
-        <Route path="/"> 
-            <App />      
-        </Route>
-      
-      </Switch>
-    </Router>
-    
+  <Router>
+    <Switch>
+      <Route path="/details">
+        <Details />
+      </Route>
+      <Route path="/">
+        <App />
+      </Route>
+
+    </Switch>
+  </Router>
   ,
   document.getElementById('root')
 );
