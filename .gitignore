@@ -4,11 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+/package-lock.json
 
-# testing
+# testings
 /coverage
 
-# production
+# productions
 /build
 
 # misc
