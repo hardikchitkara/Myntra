@@ -34,7 +34,7 @@ class mainelementdeatils extends React.Component {
 
 	render() {
 
-		if (document.getElementById(this.state.size) != null) {
+		if (document.getElementById(this.state.size)) {
 			let list = document.getElementsByClassName("size-buttons-size-button");
 			for (let i = 0; i < list.length; i++) {
 				list[i].style.borderColor = "#D3D3D3";
@@ -112,7 +112,7 @@ class mainelementdeatils extends React.Component {
 									this.props.receivediscountrangedata(this.state.discount);
 									this.props.receivecolordata(this.state.color);
 									this.props.receivesizedata(this.state.size);
-									if (this.state.size == "") {
+									if (this.state.size === "") {
 										alert("please select size first");
 									}
 									else {

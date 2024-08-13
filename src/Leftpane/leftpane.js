@@ -1,16 +1,17 @@
 import React from "react";
 
-import "./leftpane.css"
+import './Leftpane.css';
 
 class Leftpane extends React.Component {
+
   state = {
     sex: [],
     brand: [],
     price: [],
     color: [],
     discountrange: []
-
   };
+
   checkfirst(p1, p2) {
     if (p2) {
       let l = this.state.sex;
@@ -29,6 +30,7 @@ class Leftpane extends React.Component {
     }
     this.props.receivesexdata(this.state.sex)
   }
+
   checksecond(p1, p2) {
     if (p2) {
       let l = this.state.brand;
@@ -47,6 +49,7 @@ class Leftpane extends React.Component {
     }
     this.props.receivebranddata(this.state.brand)
   }
+
   checkthird(p1, p2) {
     if (p2) {
       let l = this.state.price;
@@ -65,6 +68,7 @@ class Leftpane extends React.Component {
     }
     this.props.receivepricedata(this.state.price)
   }
+
   checkfourth(p1, p2) {
     if (p2) {
       let l = this.state.color;
@@ -83,6 +87,7 @@ class Leftpane extends React.Component {
     }
     this.props.receivecolordata(this.state.color)
   }
+
   checkfifth(p1, p2) {
     if (p2) {
       let l = this.state.discountrange;
@@ -101,6 +106,7 @@ class Leftpane extends React.Component {
     }
     this.props.receivediscountrangedata(this.state.discountrange)
   }
+
   render() {
 
     return (
@@ -184,8 +190,9 @@ class Leftpane extends React.Component {
         </div>
       </div>
     )
+
   }
-
-
+  
 }
+
 export default Leftpane;

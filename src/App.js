@@ -1,10 +1,13 @@
-import './App.css';
-import Middle from './Middle/Middle.js';
-import Header from './Header/Header.js';
-import Leftpane from './LeftPane/leftpane.js';
-import Maincomponent from './MainComponent/maincomponent.jsx'
+import Header from './Header/Header';
+import Middle from './Middle/Middle';
 import React from 'react';
+import Leftpane from './Leftpane/Leftpane';
+import MainComponent  from './MainComponent/MainComponent';
+
+import './App.css';
+
 class App extends React.Component {
+  
   state = {
     sexdata: [],
     pricedata: [],
@@ -13,51 +16,51 @@ class App extends React.Component {
     colordata: [],
     searchedstring: "",
     sortingchoice: "",
-
   }
+
   receivesexdata = (param) => {
     this.setState({
-
       sexdata: param
     })
   }
+
   receivepricedata = (param) => {
     this.setState({
-
       pricedata: param
     })
   }
+
   receivebranddata = (param) => {
     this.setState({
-
       branddata: param
     })
   }
+
   receivediscountrangedata = (param) => {
     this.setState({
-
       discountrangedata: param
     })
   }
+
   receivecolordata = (param) => {
     this.setState({
-
       colordata: param
     })
   }
+
   receivestringdata = (param) => {
     this.setState({
       searchedstring: param
-
     })
   }
+
   receivesortingdata = (param) => {
     this.setState({
       sortingchoice: param
     })
   }
+
   render() {
-    console.log("cart data --->", this.state.cart);
 
     return (
       <React.Fragment>
@@ -81,13 +84,12 @@ class App extends React.Component {
               />
             </div>
             <div className="rightpane">
-              <Maincomponent
+              <MainComponent
                 sendsexdata={this.state.sexdata}
                 sendpricedata={this.state.pricedata}
                 sendbranddata={this.state.branddata}
                 senddiscountrangedata={this.state.discountrangedata}
                 sendcolordata={this.state.colordata}
-
                 sendstringdata={this.state.searchedstring}
                 sendsortingchoice={this.state.sortingchoice}
               />

@@ -1,7 +1,9 @@
 import React from "react";
+
 import './Header.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 class Header extends React.Component {
+
 	state = {
 		loading: [],
 	}
@@ -11,6 +13,7 @@ class Header extends React.Component {
 		x.push(param);
 		this.setState({ loading: x })
 	}
+	
 	render() {
 		return (
 			<nav className="header">
@@ -41,13 +44,13 @@ class Header extends React.Component {
 						alert("It is not working, it requires login ");
 					}}></span>
 					<div className="bag" onClick={() => {
-						if (document.getElementById("modal").style.visibility != "visible") {
+						if (document.getElementById("modal").style.visibility !== "visible") {
 							document.getElementById("modal").style.visibility = "visible";
 						}
 						console.log(window.$count);
 						let x = [];
 						for (let i = 0; i < window.$count; i++) {
-							if (window.localStorage.getItem(`user${i}`) != undefined) {
+							if (window.localStorage.getItem(`user${i}`)) {
 								let obj = JSON.parse(window.localStorage.getItem(`user${i}`));
 
 								x.push(obj);
@@ -70,7 +73,7 @@ class Header extends React.Component {
 							<div class="p-heading-icon--small">
 								{
 									this.state.loading.map((el) => {
-										if (el != undefined) {
+										if (el) {
 											return (
 												<div class="p-heading-icon__header">
 													<span>{el[2]}</span>
@@ -81,9 +84,9 @@ class Header extends React.Component {
 													<span>{el[5]}</span>
 													<span className="nameremove" onClick={() => {
 														for (let i = 0; i < window.$count; i++) {
-															if (window.localStorage.getItem(`user${i}`) != undefined) {
+															if (window.localStorage.getItem(`user${i}`)) {
 																let obj = JSON.parse(window.localStorage.getItem(`user${i}`))
-																if (JSON.stringify(el) == JSON.stringify(obj)) {
+																if (JSON.stringify(el) === JSON.stringify(obj)) {
 																	localStorage.removeItem(`user${i}`);
 
 																}
@@ -93,7 +96,7 @@ class Header extends React.Component {
 														let idx = x.indexOf(el);
 														x.splice(idx, 1);
 														this.setState({ loading: x })
-														if (this.state.loading.length == 0) window.$count = 0;
+														if (this.state.loading.length === 0) window.$count = 0;
 													}}>REMOVE</span>
 												</div>
 											)

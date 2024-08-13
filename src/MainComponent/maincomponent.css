@@ -91,3 +91,16 @@ div .ticket:hover {
 	cursor: pointer;
 	top: -3.5rem;
 }
+
+.no-items-found-image {
+	height: 300px;
+	width: 300px;
+}
+
+.image-container {
+	height: 60%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
