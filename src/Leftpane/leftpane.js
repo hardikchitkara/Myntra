@@ -116,75 +116,75 @@ class Leftpane extends React.Component {
           <div className="first">
             <form className="sex">
               <input type="checkbox" id="Men" onChange={(e) => this.checkfirst("Men", e.target.checked)} />
-              <label htmlFor="Men">Men<span class="fa fa-check" /></label>
+              <label htmlFor="Men">Men</label>
               <input type="checkbox" id="Women" onChange={(e) => this.checkfirst("Women", e.target.checked)} />
-              <label htmlFor="Women">Women<span class="fa fa-check" /></label>
+              <label htmlFor="Women">Women</label>
               <input type="checkbox" id="Boys" onChange={(e) => this.checkfirst("Boys", e.target.checked)} />
-              <label htmlFor="Boys">Boys<span class="fa fa-check" /></label>
+              <label htmlFor="Boys">Boys</label>
               <input type="checkbox" id="Girls" onChange={(e) => this.checkfirst("Girls", e.target.checked)} />
-              <label htmlFor="Girls">Girls<span class="fa fa-check" /></label>
+              <label htmlFor="Girls">Girls</label>
             </form>
           </div>
           <span className="namebrands">Brands</span>
           <div className="second">
             <form className="brands">
               <input type="checkbox" id="Roadster" onChange={(e) => this.checksecond("Roadster", e.target.checked)} />
-              <label htmlFor="Roadster">Roadster<span class="fa fa-check" /></label>
+              <label htmlFor="Roadster">Roadster</label>
               <input type="checkbox" id="Blackberrys" onChange={(e) => this.checksecond("Blackberrys", e.target.checked)} />
-              <label htmlFor="Blackberrys">Blackberrys<span class="fa fa-check" /></label>
+              <label htmlFor="Blackberrys">Blackberrys</label>
               <input type="checkbox" id="Allen Solly" onChange={(e) => this.checksecond("Allen Solly", e.target.checked)} />
-              <label htmlFor="Allen Solly">Allen Solly<span class="fa fa-check" /></label>
+              <label htmlFor="Allen Solly">Allen Solly</label>
               <input type="checkbox" id="ColorPlus" onChange={(e) => this.checksecond("ColorPlus", e.target.checked)} />
-              <label htmlFor="ColorPlus">ColorPlus<span class="fa fa-check" /></label>
+              <label htmlFor="ColorPlus">ColorPlus</label>
             </form>
           </div>
           <span className="nameprice">Price</span>
           <div className="third">
             <form className="price">
               <input type="checkbox" id="249" onChange={(e) => this.checkthird("249,5937", e.target.checked)} />
-              <label htmlFor="249">Rs. 249 to Rs. 5937<span class="fa fa-check" /></label>
+              <label htmlFor="249">Rs. 249 to Rs. 5937</label>
               <input type="checkbox" id="5937" onChange={(e) => this.checkthird("5937,11625", e.target.checked)} />
-              <label htmlFor="5937">Rs. 5937 to Rs. 11625<span class="fa fa-check" /></label>
+              <label htmlFor="5937">Rs. 5937 to Rs. 11625</label>
               <input type="checkbox" id="11625" onChange={(e) => this.checkthird("11625,17313", e.target.checked)} />
-              <label htmlFor="11625"> Rs. 11625 to Rs. 17313<span class="fa fa-check" /></label>
+              <label htmlFor="11625"> Rs. 11625 to Rs. 17313</label>
             </form>
           </div>
           <span className="namecolor">Color</span>
           <div className="fourth">
             <form className="color">
               <input type="checkbox" id="Blue" onChange={(e) => this.checkfourth("Blue", e.target.checked)} />
-              <label htmlFor="Blue">Blue<span class="fa fa-check" /></label>
+              <label htmlFor="Blue">Blue</label>
               <input type="checkbox" id="White" onChange={(e) => this.checkfourth("White", e.target.checked)} />
-              <label htmlFor="White">White<span class="fa fa-check" /></label>
+              <label htmlFor="White">White</label>
               <input type="checkbox" id="Grey" onChange={(e) => this.checkfourth("Grey", e.target.checked)} />
-              <label htmlFor="Grey">Grey<span class="fa fa-check" /></label>
+              <label htmlFor="Grey">Grey</label>
               <input type="checkbox" id="Black" onChange={(e) => this.checkfourth("Black", e.target.checked)} />
-              <label htmlFor="Black">Black<span class="fa fa-check" /></label>
+              <label htmlFor="Black">Black</label>
               <input type="checkbox" id="Red" onChange={(e) => this.checkfourth("Red", e.target.checked)} />
-              <label htmlFor="Red">Red<span class="fa fa-check" /></label>
+              <label htmlFor="Red">Red</label>
               <input type="checkbox" id="Green" onChange={(e) => this.checkfourth("Green", e.target.checked)} />
-              <label htmlFor="Green">Green<span class="fa fa-check" /></label>
+              <label htmlFor="Green">Green</label>
             </form>
           </div>
           <span className="namediscountrange">Discount Range</span>
           <div className="fifth">
             <form className="discountrange">
               <input type="checkbox" id="10%" onChange={(e) => this.checkfifth("10", e.target.checked)} />
-              <label htmlFor="10%">10% and above<span class="fa fa-check" /></label>
+              <label htmlFor="10%">10% and above</label>
               <input type="checkbox" id="20%" onChange={(e) => this.checkfifth("20", e.target.checked)} />
-              <label htmlFor="20%">20% and above<span class="fa fa-check" /></label>
+              <label htmlFor="20%">20% and above</label>
               <input type="checkbox" id="30%" onChange={(e) => this.checkfifth("30", e.target.checked)} />
-              <label htmlFor="30%">30% and above<span class="fa fa-check" /></label>
+              <label htmlFor="30%">30% and above</label>
               <input type="checkbox" id="40%" onChange={(e) => this.checkfifth("40", e.target.checked)} />
-              <label htmlFor="40%">40% and above<span class="fa fa-check" /></label>
+              <label htmlFor="40%">40% and above</label>
               <input type="checkbox" id="50%" onChange={(e) => this.checkfifth("50", e.target.checked)} />
-              <label htmlFor="50%">50% and above<span class="fa fa-check" /></label>
+              <label htmlFor="50%">50% and above</label>
               <input type="checkbox" id="60%" onChange={(e) => this.checkfifth("60", e.target.checked)} />
-              <label htmlFor="60%">60% and above<span class="fa fa-check" /></label>
+              <label htmlFor="60%">60% and above</label>
               <input type="checkbox" id="70%" onChange={(e) => this.checkfifth("70", e.target.checked)} />
-              <label htmlFor="70%">70% and above<span class="fa fa-check" /></label>
+              <label htmlFor="70%">70% and above</label>
               <input type="checkbox" id="80%" onChange={(e) => this.checkfifth("80", e.target.checked)} />
-              <label htmlFor="80%">80% and above<span class="fa fa-check" /></label>
+              <label htmlFor="80%">80% and above</label>
             </form>
           </div>
         </div>
