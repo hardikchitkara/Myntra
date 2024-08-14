@@ -153,7 +153,7 @@ const MainComponent = (props) => {
           <div className="image-text-container">
             <img
               className="no-items-found-image"
-              src="Myntra/assets/no-items-found.png"
+              src="assets/no-items-found.png"
               alt=""
             />
             <span className="text-image">No Items found</span>
