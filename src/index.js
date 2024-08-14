@@ -3,20 +3,20 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import Details from "./Details/Details.jsx";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as BrowserRouter, Switch, Route } from "react-router-dom";
 
 window.$count = 0;
 ReactDOM.render(
-  <Router>
+  <BrowserRouter basename={process.env.PUBLIC_URL} >
     <Switch>
-      <Route path="/details">
-        <Details />
-      </Route>
-      <Route path="/">
-        <App />
-      </Route>
+        <Route path="/details">
+          <Details />
+        </Route>
+        <Route path="/">
+          <App />
+        </Route>
     </Switch>
-  </Router>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
