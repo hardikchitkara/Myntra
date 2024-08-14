@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import Details from './Details.jsx';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import 'font-awesome/css/font-awesome.min.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import Details from "./Details.jsx";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "font-awesome/css/font-awesome.min.css";
 
 window.$count = 0;
 ReactDOM.render(
@@ -16,11 +16,9 @@ ReactDOM.render(
       <Route path="/">
         <App />
       </Route>
-
     </Switch>
-  </Router>
-  ,
-  document.getElementById('root')
+  </Router>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

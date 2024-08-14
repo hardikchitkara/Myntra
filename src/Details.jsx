@@ -1,13 +1,19 @@
-import Header from './Header/Header.js';
-import React from 'react';
-import Mainelementdetails from './Mainelementdetails/Mainelementdetails.jsx';
-import { useLocation } from 'react-router-dom';
+import Header from "./Header/Header.js";
+import React from "react";
+import Mainelementdetails from "./Mainelementdetails/Mainelementdetails.jsx";
+import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
 function Details() {
-
   const location = useLocation();
-  const [data, setdata] = useState({ sex: "", price: "", brand: "", discount: "", color: "", size: " " });
+  const [data, setdata] = useState({
+    sex: "",
+    price: "",
+    brand: "",
+    discount: "",
+    color: "",
+    size: " ",
+  });
 
   function receivesexdata(param) {
     let obj = data;
@@ -48,9 +54,7 @@ function Details() {
   return (
     <div>
       <div className="App">
-        <Header
-          sendalldata={data}
-        />
+        <Header sendalldata={data} />
       </div>
       <div>
         <Mainelementdetails
@@ -70,7 +74,6 @@ function Details() {
         />
       </div>
     </div>
-  )
-
+  );
 }
 export default Details;
