@@ -104,3 +104,12 @@ div .ticket:hover {
 	justify-content: space-evenly;
 	align-items: center;
 }
+
+.image-text-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.text-image {
+	margin: 0 auto;
+}

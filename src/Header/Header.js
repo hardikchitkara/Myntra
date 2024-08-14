@@ -13,7 +13,7 @@ class Header extends React.Component {
 		x.push(param);
 		this.setState({ loading: x })
 	}
-	
+
 	render() {
 		return (
 			<nav className="header">
@@ -30,9 +30,7 @@ class Header extends React.Component {
 				<div className="secondbox">
 					<input placeholder="Search for fitting like casual" className="header_6" type="text" onChange={
 						(el) => {
-							if (!this.props.receivestringdata) {
-								this.props.receivestringdata(el.currentTarget.value)
-							}
+							this.props.receivestringdata(el.currentTarget.value)
 						}
 					}></input>
 				</div>
