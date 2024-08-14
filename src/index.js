@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import Details from "./Details.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "font-awesome/css/font-awesome.min.css";
 
 window.$count = 0;
 ReactDOM.render(

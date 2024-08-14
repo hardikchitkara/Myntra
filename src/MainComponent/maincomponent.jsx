@@ -154,7 +154,7 @@ const MainComponent = (props) => {
             <img
               className="no-items-found-image"
               src="assets/no-items-found.png"
-              alt=""
+              alt="No Image Found"
             />
             <span className="text-image">No Items found</span>
           </div>

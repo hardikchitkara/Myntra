@@ -1,9 +1,5 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingBag } from "@fortawesome/fontawesome-free-solid";
-import { faHeart } from "@fortawesome/fontawesome-free-regular";
-
 import "./Header.css";
 
 class Header extends React.Component {
@@ -59,7 +55,7 @@ class Header extends React.Component {
               alert("It is not working, it requires login ");
             }}
           ></i>
-          <FontAwesomeIcon icon={faHeart} />
+					<i className="fa fa-heart"></i>
           <div
             className="bag"
             onClick={() => {
@@ -80,7 +76,8 @@ class Header extends React.Component {
               }
             }}
           >
-            <FontAwesomeIcon icon={faShoppingBag} />
+            {/* <FontAwesomeIcon icon={faShoppingBag} /> */}
+						<i class="fa-solid fa-bag-shopping"></i>
           </div>
         </div>
         <div class="p-modal" id="modal">
