@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import Details from "./Details.jsx";
+import Details from "./Details/Details.jsx";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 window.$count = 0;

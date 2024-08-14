@@ -1,6 +1,6 @@
-import Header from "./Header/Header.js";
+import Header from "../Header/Header.js";
 import React from "react";
-import Mainelementdetails from "./Mainelementdetails/Mainelementdetails.jsx";
+import Mainelementdetails from "../Mainelementdetails/Mainelementdetails.jsx";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 

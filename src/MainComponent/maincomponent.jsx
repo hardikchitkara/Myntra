@@ -153,7 +153,7 @@ const MainComponent = (props) => {
           <div className="image-text-container">
             <img
               className="no-items-found-image"
-              src="assets/no-items-found.png"
+              src={process.env.PUBLIC_URL + "/assets/no-items-found.png"}
               alt="No Image Found"
             />
             <span className="text-image">No Items found</span>

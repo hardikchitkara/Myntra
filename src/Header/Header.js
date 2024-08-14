@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Header.css";
 
@@ -17,10 +18,14 @@ class Header extends React.Component {
     return (
       <nav className="header">
         <div className="firstbox">
-          <img
-            className="desktop-logo"
-            src="https://images.indianexpress.com/2021/01/myntra.png"
-          ></img>
+          <div className="desktop-logo-container">
+            <Link className="desktop-logo-container" to={{ pathname: "/" }}>
+              <img
+                className="desktop-logo"
+                src={process.env.PUBLIC_URL + "/assets/myntra-logo.png"}
+              ></img>
+            </Link>
+          </div>
           <div className="header_1">
             <span>Men</span>
           </div>
@@ -55,7 +60,7 @@ class Header extends React.Component {
               alert("It is not working, it requires login ");
             }}
           ></i>
-					<i className="fa fa-heart"></i>
+          <i className="fa fa-heart"></i>
           <div
             className="bag"
             onClick={() => {
@@ -77,7 +82,7 @@ class Header extends React.Component {
             }}
           >
             {/* <FontAwesomeIcon icon={faShoppingBag} /> */}
-						<i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
           </div>
         </div>
         <div class="p-modal" id="modal">

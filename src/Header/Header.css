@@ -61,9 +61,14 @@
 }
 
 .desktop-logo {
-
-  width: 80px;
+  width: 50px;
   left: 0px;
+}
+
+.desktop-logo-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .header_1 .header_2 .header_3 .header_4 .header_5 {
@@ -100,12 +105,6 @@
 
 .header_6:focus {
   outline: none;
-}
-
-.myntraweb-sprite {
-  background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
-  background-size: 1404px 105px;
-  cursor: pointer;
 }
 
 .sprites-headerBag {
