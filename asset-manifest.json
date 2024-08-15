@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Myntra/static/css/main.bb7c413b.css",
-    "main.js": "/Myntra/static/js/main.00a02c2a.js",
+    "main.js": "/Myntra/static/js/main.49eec0c0.js",
     "index.html": "/Myntra/index.html",
     "main.bb7c413b.css.map": "/Myntra/static/css/main.bb7c413b.css.map",
-    "main.00a02c2a.js.map": "/Myntra/static/js/main.00a02c2a.js.map"
+    "main.49eec0c0.js.map": "/Myntra/static/js/main.49eec0c0.js.map"
   },
   "entrypoints": [
     "static/css/main.bb7c413b.css",
-    "static/js/main.00a02c2a.js"
+    "static/js/main.49eec0c0.js"
   ]
 }
