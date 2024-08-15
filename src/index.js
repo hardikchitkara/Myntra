@@ -3,11 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import Details from "./Details/Details.jsx";
-import { BrowserRouter as BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import {
+  Switch,
+  Route,
+  Redirect,
+  HashRouter,
+} from "react-router-dom";
 
 window.$count = 0;
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/details">
         <Details />
@@ -19,7 +24,7 @@ ReactDOM.render(
         <Redirect to="/" />
       </Route>
     </Switch>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );
 

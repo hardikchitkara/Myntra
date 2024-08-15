@@ -1,7 +1,7 @@
 import Header from "../Header/Header.js";
 import React from "react";
 import Mainelementdetails from "../Mainelementdetails/Mainelementdetails.jsx";
-import { useLocation } from "react-router-dom";
+import { Redirect, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 function Details() {
@@ -52,6 +52,7 @@ function Details() {
   }
 
   return (
+    location.state ?
     <div>
       <div className="App">
         <Header sendalldata={data} />
@@ -74,6 +75,8 @@ function Details() {
         />
       </div>
     </div>
+    :
+    <Redirect to="/" />
   );
 }
 export default Details;
