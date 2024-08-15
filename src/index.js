@@ -3,18 +3,21 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import Details from "./Details/Details.jsx";
-import { BrowserRouter as BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter as BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 window.$count = 0;
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL} >
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
-        <Route path="/details">
-          <Details />
-        </Route>
-        <Route path="/">
-          <App />
-        </Route>
+      <Route exact path="/details">
+        <Details />
+      </Route>
+      <Route exact path="/">
+        <App />
+      </Route>
+      <Route path="*">
+        <Redirect to="/" />
+      </Route>
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
